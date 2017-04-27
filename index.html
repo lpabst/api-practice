@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angular Practice</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body ng-controller="mainCtrl">
+
+<header class='mobile_header'>
+  <div class='ham'>
+    <div class='line'></div>
+    <div class='line'></div>
+    <div class='line'></div>
+  </div>
+</header>
+   
+<header class='desktop_header'>
+  <ul class='desktop_nav'>
+    <li>Home</li>
+    |
+    <li>About</li>
+    |
+    <li>Contact</li>
+  </ul>
+</header>
+
+<section class='main_container'>
+
+  <div class='input_form'>
+    <input type='text' ng-model='movie_name' placeholder='Enter Movie Name'>
+    <span><button ng-click='searchMovie(movie_name)'>Submit</button></span>
+  </div>
+
+  <div class='movie_info'>
+    {{ info }}
+  </div>
+
+
+
+
+
+
+
+
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+<script src="js/app.js"></script>
+<script src="js/mainCtrl.js"></script>
+<script src="js/service.js"></script>
+
+</body>
+</html>
+
